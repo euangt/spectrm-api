@@ -49,7 +49,7 @@ If mock-data is wanted to test API functionality, the following command can be c
 $ rails db:seed # Will create 10 'messages' in the db
 ```
 
-### At this point, API requests can be made to the base url of `<localhost:3000/api/v1>`
+At this point, API requests can be made to the base url of `<localhost:3000/api/v1>`
 
 ## Making API calls: 
 
