@@ -1,1 +1,1 @@
-json.extract! @message, :id
+json.extract! @message, :uuid, :content, :retrieval_count
