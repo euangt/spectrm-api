@@ -17,7 +17,7 @@ The API can be interacted either locally or through the deployed version hosted 
 
 ### Remote User:
 
-The base URL is... 
+The base URL is https://dashboard.heroku.com/apps/api-messages-spectrm
 
 ### Local Use: 
 
@@ -47,6 +47,10 @@ $ rails s # This starts the server
 If mock-data is wanted to test API functionality, the following command can be called to generate data: 
 ```shell
 $ rails db:seed # Will create 10 'messages' in the db
+```
+This API has been built through a TDD framework. To run tests please enter the following command:
+```shell
+$ rails test
 ```
 
 At this point, API requests can be made to the base url of `<localhost:3000/api/v1>`
