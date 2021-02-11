@@ -17,7 +17,7 @@ The API can be interacted either locally or through the deployed version hosted 
 
 ### Remote User:
 
-The base URL is... 
+The base URL is https://dashboard.heroku.com/apps/api-messages-spectrm
 
 ### Local Use: 
 
