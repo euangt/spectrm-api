@@ -48,6 +48,10 @@ If mock-data is wanted to test API functionality, the following command can be c
 ```shell
 $ rails db:seed # Will create 10 'messages' in the db
 ```
+This API has been built through a TDD framework. To run tests please enter the following command:
+```shell
+$ rails test
+```
 
 At this point, API requests can be made to the base url of `<localhost:3000/api/v1>`
 
