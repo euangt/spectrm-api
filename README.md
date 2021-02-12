@@ -17,7 +17,7 @@ The API can be interacted either locally or through the deployed version hosted 
 
 ### Remote User:
 
-The base URL is https://dashboard.heroku.com/apps/api-messages-spectrm
+The base URL is https://api-messages-spectrm.herokuapp.com/api/v1/messages
 
 ### Local Use: 
 
@@ -60,20 +60,20 @@ At this point, API requests can be made to the base url of `<localhost:3000/api/
 It is recommended that API calls are made with a Rest Client, such as Postman, for managing the requests. 
 
 ## Retrieve all messages:
-Please append '/messages' to the base URL as part of a GET request to return all db entries, their UUID, content and counter values. 
+Please place a GET request to the base URL to return all db entries, their UUID, content and counter values. 
 
 ## Retrieve a single message:
-Please append 'messages/<MessageUUID>' to the base URL as part of a GET request. This will increase the retrieval_count of the chosen message by +1.
+Please append '/<MessageUUID>' to the base URL as part of a GET request. This will increase the retrieval_count of the chosen message by +1.
  
 ## Update a message: 
-Please append 'messages/<MessageUUID>' to the base URL as part of a PATCH (PUT) request. 
+Please append '/<MessageUUID>' to the base URL as part of a PATCH (PUT) request. 
 If using Postman (or similar) please update the content using JSON format in the body of the request, for example: 
 `{ "content": "updated message" }`
   
 ## Create a message: 
-Please generate a POST request to the base URL appended by '/messages/'. 
+Please generate a POST request to the base URL. 
 lease update the content using JSON format in the body of the request, for example: 
 `{ "content": "new message" }`
 
 ## Delete a method: 
-Please generate a DELETE request to the base URL appended by '/messages/<MessageUUID>'
+Please generate a DELETE request to the base URL appended by '/<MessageUUID>'
