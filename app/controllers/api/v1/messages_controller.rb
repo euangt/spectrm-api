@@ -6,6 +6,7 @@ class Api::V1::MessagesController < Api::V1::BaseController
 
   def show
     @message.retrieval_count += 1
+    @message.save
   end
 
   def update
